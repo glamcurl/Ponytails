@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GlamCurl Ponytails</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Analytics -->
+  <!-- Replace G-XXXXXXXXXX with your GA ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Mixpanel -->
+  <script type="text/javascript">
+  (function(f,b){
+    if(!b.__SV){
+      var a,e,i,g;window.mixpanel=b;b._i=[];
+      b.init=function(a,e,d){
+        function f(b,h){
+          var a=h.split(".");
+          2==a.length&&(b=b[a[0]],h=a[1]);
+          b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}
+        }
+        var c=b;
+        "undefined"!==typeof d?c=b[d]=[]:d="mixpanel";
+        c.people=c.people||[];
+        i="track".split(" ");
+        for(g=0;g<i.length;g++)f(c,i[g]);
+        b._i.push([a,e,d])
+      };
+      b.__SV=1.2;
+      a=f.createElement("script");
+      a.type="text/javascript";
+      a.async=!0;
+      a.src="https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+      e=f.getElementsByTagName("script")[0];
+      e.parentNode.insertBefore(a,e)
+    }
+  })(document,window.mixpanel||[]);
+  mixpanel.init("YOUR_MIXPANEL_TOKEN");
+  mixpanel.track("Page Viewed");
+  </script>
+
+  <style>
+    body {font-family: Arial; text-align: center; padding: 40px;}
+    .btn {background: purple; color: white; padding: 15px; text-decoration: none; display: inline-block; margin-top: 15px;}
+    .section {margin-bottom: 60px;}
+  </style>
+</head>
+
+<body>
+
+<div class="section">
+  <h1>Instant Length. Zero Salon Stress.</h1>
+  <p>Detachable braided ponytails with curls.</p>
+  <a class="btn" href="https://wa.me/234XXXXXXXXXX?text=Hi%20I%20want%20GlamCurl" onclick="mixpanel.track('WhatsApp Clicked')">Order on WhatsApp</a>
+</div>
+
+<div class="section">
+  <h2>Available Styles</h2>
+  <p><strong>Short GlamCurl</strong> – ₦_____</p>
+  <p><strong>Mid GlamCurl</strong> – ₦_____</p>
+  <p><strong>Long GlamCurl</strong> – ₦_____</p>
+</div>
+
+<div class="section">
+  <h2>Why Choose GlamCurl?</h2>
+  <p>• Dual comb clips</p>
+  <p>• Adjustable tightening strap</p>
+  <p>• Lightweight breathable cap</p>
+</div>
+
+</body>
+</html>
