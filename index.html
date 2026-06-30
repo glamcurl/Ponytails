@@ -156,7 +156,15 @@ Order on WhatsApp
 <p><strong>Status:</strong> In Stock</p>
 <a class="btn"
 href="https://wa.me/2349137455978?text=Hi%20I%20want%20Short%20GlamCurl"
-onclick="ttq.track('ClickButton'); mixpanel.track('Short Ponytail Clicked')">
+onclick="
+ttq.track('Contact', {
+content_name: 'Short GlamCurl Ponytail',
+content_type: 'product',
+value: 13500,
+currency: 'NGN'
+});
+mixpanel.track('Short Ponytail Clicked')
+">
 Order on WhatsApp
 </a>
 </div>
@@ -170,7 +178,12 @@ Order on WhatsApp
 <p><strong>Status:</strong> In Stock</p>
 <a class="btn"
 href="https://wa.me/2349137455978?text=Hi%20I%20want%20Mid%20GlamCurl"
-onclick="ttq.track('ClickButton'); mixpanel.track('Mid Ponytail Clicked')">
+onclick="ttq.track('Contact', {
+content_name: 'Mid GlamCurl Ponytail',
+content_type: 'product',
+value: 18000,
+currency: 'NGN'
+}); mixpanel.track('Mid Ponytail Clicked')">
 Order on WhatsApp
 </a>
 </div>
@@ -184,7 +197,15 @@ Order on WhatsApp
 <p><strong>Status:</strong> In Stock</p>
 <a class="btn"
 href="https://wa.me/2349137455978?text=Hi%20I%20want%20Long%20GlamCurl"
-onclick="ttq.track('ClickButton'); mixpanel.track('Long Ponytail Clicked')">
+onclick="
+ttq.track('Contact', {
+content_name: 'Long GlamCurl Ponytail',
+content_type: 'product',
+value: 25000,
+currency: 'NGN'
+});
+mixpanel.track('Long Ponytail Clicked')
+"; mixpanel.track('Long Ponytail Clicked')">
 Order on WhatsApp
 </a>
 </div>
