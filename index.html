@@ -342,21 +342,14 @@ if (hero) {
 
     observer.observe(hero);
 }
-</script>
 
 const products = document.getElementById("products");
-
-console.log(products);
 
 if (products) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-
-                console.log("Products visible");
-
                 mixpanel.track("Products Viewed");
-
                 observer.unobserve(entry.target);
             }
         });
@@ -364,6 +357,8 @@ if (products) {
 
     observer.observe(products);
 }
-  
+</script>
+
+
 </body>
 </html>
