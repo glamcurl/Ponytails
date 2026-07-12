@@ -393,6 +393,23 @@ if (benefits) {
     benefitsObserver.observe(benefits);
 }
 
+  const video = document.getElementById("product-video");
+
+if (video) {
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log("Video visible");
+                mixpanel.track("Video Viewed");
+                videoObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    videoObserver.observe(video);
+}
   
 </script>
 
