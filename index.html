@@ -153,14 +153,19 @@ border-radius: 8px;
   <h1>Instant Length. Zero Salon Stress.</h1>
   <p>Detachable braided ponytails with curls.</p>
 
-<a class="btn" 
+<a class="btn"
 href="#"
 onclick="
-alert('Button clicked');
+console.log('STEP 1');
+console.log(typeof mixpanel);
+
 mixpanel.track('WhatsApp Clicked',{
 button:'Hero Button'
 });
-"
+
+console.log('STEP 2');
+
+return false;
 ">
 Order on WhatsApp
 </a>
