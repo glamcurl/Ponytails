@@ -395,22 +395,40 @@ if (benefits) {
     benefitsObserver.observe(benefits);
 }
 
-  const video = document.getElementById("product-video");
+ // Load YouTube Player API
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
 
-if (video) {
-    const videoObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                console.log("Video visible");
-                mixpanel.track("Video Viewed");
-                videoObserver.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.3
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+// Called automatically by YouTube
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        width: '315',
+        height: '560',
+        videoId: 'yel2tgoGhRI',
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
     });
+}
 
-    videoObserver.observe(video);
+function onPlayerStateChange(event) {
+
+    if (event.data == YT.PlayerState.PLAYING) {
+        mixpanel.track("Video Played");
+    }
+
+    if (event.data == YT.PlayerState.PAUSED) {
+        mixpanel.track("Video Paused");
+    }
+
+    if (event.data == YT.PlayerState.ENDED) {
+        mixpanel.track("Video Completed");
+    }
 }
   
 </script>
