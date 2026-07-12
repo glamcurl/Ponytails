@@ -358,19 +358,22 @@ if (products) {
     observer.observe(products);
 }
 
-  const details = document.getElementById("details");
+const details = document.getElementById("details");
 
 if (details) {
-    const observer = new IntersectionObserver((entries) => {
+    const detailsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                console.log("Details visible");
                 mixpanel.track("Details Viewed");
-                observer.unobserve(entry.target);
+                detailsObserver.unobserve(entry.target);
             }
         });
+    }, {
+        threshold: 0.3
     });
 
-    observer.observe(details);
+    detailsObserver.observe(details);
 }
 </script>
 
