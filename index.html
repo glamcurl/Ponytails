@@ -197,6 +197,7 @@ currency: 'NGN'
 mixpanel.track('Product Clicked', {
 product: 'Short',
 price: 13500
+button: "Product WhatsApp"
 });
 ">
 Order on WhatsApp
@@ -223,6 +224,7 @@ currency: 'NGN'
 mixpanel.track('Product Clicked', {
 product: 'Mid',
 price: 18500
+button: "Product WhatsApp"
 });
 ">
 Order on WhatsApp
@@ -249,6 +251,7 @@ currency: 'NGN'
 mixpanel.track('Product Clicked', {
 product: 'Long',
 price: 25000
+button: "Product WhatsApp"
 });
 ">
 Order on WhatsApp
@@ -503,13 +506,17 @@ mixpanel.register({
   
 if (!localStorage.getItem("visited_before")) {
 
-    mixpanel.track("New Visitor");
+    mixpanel.register({
+        visitor_type: "New"
+    });
 
     localStorage.setItem("visited_before", "yes");
 
 } else {
 
-    mixpanel.track("Returning Visitor");
+    mixpanel.register({
+        visitor_type: "Returning"
+    });
 
 }
   
