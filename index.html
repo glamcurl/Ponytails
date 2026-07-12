@@ -488,34 +488,16 @@ setTimeout(function () {
 });
 }, 120000);
 
-  const params = new URLSearchParams(window.location.search);
-
-mixpanel.register({
-    utm_source: params.get("utm_source"),
-    utm_medium: params.get("utm_medium"),
-    utm_campaign: params.get("utm_campaign"),
-    utm_content: params.get("utm_content"),
-    utm_term: params.get("utm_term")
-});
-
-  mixpanel.register({
-    traffic_source: document.referrer || "Direct"
-});
-
+ 
   
 if (!localStorage.getItem("visited_before")) {
 
-    mixpanel.register({
-        visitor_type: "New"
-    });
+   
 
     localStorage.setItem("visited_before", "yes");
 
 } else {
 
-    mixpanel.register({
-        visitor_type: "Returning"
-    });
 
 }
   
