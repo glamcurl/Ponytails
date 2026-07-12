@@ -156,16 +156,11 @@ border-radius: 8px;
 <a class="btn" 
 href="#"
 onclick="
-ttq.track('Contact', {
-content_name: 'GlamCurl Collection',
-content_type: 'product_group',
-currency: 'NGN'
+alert('Button clicked');
+mixpanel.track('WhatsApp Clicked',{
+button:'Hero Button'
 });
-mixpanel.track("WhatsApp Clicked",{
-
-button:"Hero Button"
-
-});
+"
 ">
 Order on WhatsApp
 </a>
