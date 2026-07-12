@@ -375,6 +375,25 @@ if (details) {
 
     detailsObserver.observe(details);
 }
+const benefits = document.getElementById("benefits");
+
+if (benefits) {
+    const benefitsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log("Benefits visible");
+                mixpanel.track("Benefits Viewed");
+                benefitsObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    benefitsObserver.observe(benefits);
+}
+
+  
 </script>
 
 
