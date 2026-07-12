@@ -280,10 +280,16 @@ Ready for this look? Tap below to order yours directly.
 <a href="https://wa.me/2349137455978" 
 target="_blank"
 onclick="
-ttq.track('Contact', {
-content_name: 'GlamCurl Collection',
-content_type: 'product_group',
-currency: 'NGN'
+ttq.track('Contact',{
+content_name:'GlamCurl Collection',
+content_type:'product_group',
+currency:'NGN'
+});
+
+mixpanel.track('WhatsApp Clicked',{
+
+button:'Bottom Button'
+
 });
 ">
 
