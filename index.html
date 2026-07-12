@@ -459,6 +459,45 @@ window.addEventListener("scroll", function () {
     }
 
 });
+
+setTimeout(function () {
+    mixpanel.track("30 Seconds");
+}, 30000);
+
+setTimeout(function () {
+    mixpanel.track("60 Seconds");
+}, 60000);
+
+setTimeout(function () {
+    mixpanel.track("120 Seconds");
+}, 120000);
+
+  const params = new URLSearchParams(window.location.search);
+
+mixpanel.register({
+    utm_source: params.get("utm_source"),
+    utm_medium: params.get("utm_medium"),
+    utm_campaign: params.get("utm_campaign"),
+    utm_content: params.get("utm_content"),
+    utm_term: params.get("utm_term")
+});
+
+  mixpanel.register({
+    traffic_source: document.referrer || "Direct"
+});
+
+  
+if (!localStorage.getItem("visited_before")) {
+
+    mixpanel.track("New Visitor");
+
+    localStorage.setItem("visited_before", "yes");
+
+} else {
+
+    mixpanel.track("Returning Visitor");
+
+}
   
 </script>
 
