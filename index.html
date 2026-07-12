@@ -80,9 +80,31 @@ ttq.track('ViewContent', {
   
 </script>
 
+<script>
 
+const hero = document.getElementById("hero");
 
+const observer = new IntersectionObserver((entries)=>{
 
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+mixpanel.track("Hero Viewed");
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+});
+
+observer.observe(hero);
+
+</script>
+
+  
   
   <style>
 
