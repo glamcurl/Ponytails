@@ -84,29 +84,6 @@ ttq.track('ViewContent', {
   <style>
 
 
-<script>
-
-const hero = document.getElementById("hero");
-
-const observer = new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-mixpanel.track("Hero Viewed");
-
-observer.unobserve(entry.target);
-
-}
-
-});
-
-});
-
-observer.observe(hero);
-
-</script>
 
     
 body {
@@ -161,6 +138,31 @@ border-radius: 8px;
 </style>
 </head>
 
+<script>
+
+const hero = document.getElementById("hero");
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+mixpanel.track("Hero Viewed");
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+});
+
+observer.observe(hero);
+
+</script>
+
+  
 <body>
 
 <div class="section" id="hero">
