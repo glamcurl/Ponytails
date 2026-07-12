@@ -344,7 +344,21 @@ if (hero) {
 }
 </script>
 
+const products = document.getElementById("products");
 
+if (products) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                mixpanel.track("Products Viewed");
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    observer.observe(products);
+}
+  
   
 </body>
 </html>
