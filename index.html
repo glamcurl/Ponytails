@@ -214,18 +214,21 @@ Order on WhatsApp
 <p><strong>Status:</strong> In Stock</p>
 <a class="btn"
 href="https://wa.me/2349137455978?text=Hi%20I%20want%20Mid%20GlamCurl"
-onclick="ttq.track('Contact', {
+<a class="btn"
+href="https://wa.me/2349137455978?text=Hi%20I%20want%20Mid%20GlamCurl"
+onclick="
+ttq.track('Contact', {
 content_name: 'Mid GlamCurl Ponytail',
 content_type: 'product',
 value: 18000,
 currency: 'NGN'
-}); mixpanel.track("Product Clicked",{
-
-product:"Mid",
-
-price:18000
-
 });
+
+mixpanel.track('Product Clicked', {
+product: 'Mid',
+price: 18000
+});
+">
 Order on WhatsApp
 </a>
 </div>
@@ -246,13 +249,14 @@ content_type: 'product',
 value: 25000,
 currency: 'NGN'
 });
-mixpanel.track("Product Clicked",{
 
-product:"Long",
-
-price:25000
-
+mixpanel.track('Product Clicked', {
+product: 'Long',
+price: 25000
 });
+">
+Order on WhatsApp
+</a>
 Order on WhatsApp
 </a>
 </div>
