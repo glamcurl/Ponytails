@@ -357,6 +357,21 @@ if (products) {
 
     observer.observe(products);
 }
+
+  const details = document.getElementById("details");
+
+if (details) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                mixpanel.track("Details Viewed");
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    observer.observe(details);
+}
 </script>
 
 
