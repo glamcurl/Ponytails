@@ -1103,6 +1103,369 @@ MOBILE
 
 
 
+/* ===========================
+LONG GLAMCURL — VISUAL STORY
+NEW OVERRIDES
+=========================== */
+
+
+/* ===========================
+HERO SHOWCASE
+=========================== */
+
+.long-look-showcase {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.45fr 0.75fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.long-look-main,
+.long-look-bun {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #f7f5f4;
+}
+
+.long-look-main {
+  min-height: 720px;
+}
+
+.long-look-bun {
+  min-height: 720px;
+}
+
+.long-look-main img,
+.long-look-bun img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* ===========================
+IMAGE LABELS
+=========================== */
+
+.long-look-label,
+.long-bun-label {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+  padding: 20px 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+}
+
+.long-look-label span,
+.long-bun-label span {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.long-look-label strong,
+.long-bun-label strong {
+  display: block;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+
+/* ===========================
+REVEAL SECTION
+=========================== */
+
+.long-versatility-reveal {
+  max-width: 760px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+.long-versatility-reveal .long-versatility-small {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.long-versatility-reveal h3 {
+  margin: 0 0 24px;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.03;
+  letter-spacing: -2px;
+}
+
+.long-versatility-reveal p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 1.75;
+  color: #666;
+}
+
+
+/* ===========================
+DETAIL SECTION
+=========================== */
+
+.long-detail-showcase {
+  max-width: 1120px;
+  margin: 0 auto 130px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.long-detail-image {
+  overflow: hidden;
+  border-radius: 28px;
+  background: #f7f5f4;
+}
+
+.long-detail-image img {
+  width: 100%;
+  display: block;
+  height: 620px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.long-detail-copy {
+  max-width: 520px;
+}
+
+.long-detail-copy > span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.long-detail-copy h3 {
+  margin: 0 0 22px;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.02;
+  letter-spacing: -2px;
+}
+
+.long-detail-copy p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #666;
+}
+
+
+/* ===========================
+ENTRANCE SECTION
+=========================== */
+
+.long-entrance {
+  max-width: 1180px;
+  margin: 0 auto 120px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  min-height: 620px;
+  background: #f7f5f4;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.long-entrance-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+}
+
+.long-entrance-copy > span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.long-entrance-copy h3 {
+  margin: 0 0 22px;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.02;
+  letter-spacing: -2px;
+}
+
+.long-entrance-copy p {
+  max-width: 430px;
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.long-entrance-image {
+  min-height: 620px;
+}
+
+.long-entrance-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* ===========================
+BOTTOM STATEMENT OVERRIDE
+=========================== */
+
+.long-versatility-bottom {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.long-versatility-bottom h3 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.04;
+  letter-spacing: -1.5px;
+}
+
+.long-versatility-bottom p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .long-versatility {
+    padding: 75px 18px;
+  }
+
+
+  /* HERO */
+
+  .long-look-showcase {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .long-look-main {
+    min-height: 600px;
+  }
+
+  .long-look-bun {
+    min-height: 500px;
+  }
+
+  .long-look-label,
+  .long-bun-label {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 16px 17px;
+  }
+
+  .long-look-label strong,
+  .long-bun-label strong {
+    font-size: 18px;
+  }
+
+
+  /* REVEAL */
+
+  .long-versatility-reveal {
+    margin: 80px auto;
+  }
+
+  .long-versatility-reveal h3 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .long-versatility-reveal p {
+    font-size: 17px;
+  }
+
+
+  /* DETAIL */
+
+  .long-detail-showcase {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    margin-bottom: 85px;
+  }
+
+  .long-detail-image img {
+    height: 500px;
+  }
+
+  .long-detail-copy h3 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .long-detail-copy p {
+    font-size: 17px;
+  }
+
+
+  /* ENTRANCE */
+
+  .long-entrance {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    margin-bottom: 85px;
+  }
+
+  .long-entrance-copy {
+    padding: 55px 28px;
+  }
+
+  .long-entrance-copy h3 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .long-entrance-copy p {
+    font-size: 17px;
+  }
+
+  .long-entrance-image {
+    min-height: 520px;
+  }
+
+
+  /* BOTTOM */
+
+  .long-versatility-bottom h3 {
+    font-size: 38px;
+  }
+
+}
+    
+
     
     
     
@@ -1967,6 +2330,186 @@ GLAMCURL LENGTH EXPERIENCE
 </section>
 
 
+
+<!-- ===========================
+LONG GLAMCURL — MORE THAN ONE LOOK
+=========================== -->
+
+<section class="long-versatility">
+
+  <div class="long-versatility-intro">
+
+    <span class="long-versatility-kicker">
+      ONE GLAMCURL. MORE THAN ONE LOOK.
+    </span>
+
+    <h2>
+      Long When You Want It.<br>
+      Different When You Need It.
+    </h2>
+
+    <p>
+      Some days call for all that length.
+      Some days call for something softer.
+      With Long GlamCurl, you don't have to choose just one look.
+    </p>
+
+  </div>
+
+
+  <!-- ===========================
+  HERO VISUAL
+  =========================== -->
+
+  <div class="long-look-showcase">
+
+    <div class="long-look-main">
+
+      <img
+        src="StyleBeBold.JPG"
+        alt="Model wearing the Long GlamCurl ponytail"
+      >
+
+      <div class="long-look-label">
+        <span>THE LONG LOOK</span>
+        <strong>Make Your Presence Known.</strong>
+      </div>
+
+    </div>
+
+
+    <div class="long-look-bun">
+
+      <img
+        src="StyleToBun.JPG"
+        alt="Long GlamCurl styled into a bun"
+      >
+
+      <div class="long-bun-label">
+        <span>THEN SWITCH IT UP</span>
+        <strong>Yes. It Becomes A Bun.</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===========================
+  THE REVEAL
+  =========================== -->
+
+  <div class="long-versatility-reveal">
+
+    <span class="long-versatility-small">
+      MORE THAN JUST EXTRA LENGTH
+    </span>
+
+    <h3>
+      You Don't Have To Wear It<br>
+      The Same Way Every Time.
+    </h3>
+
+    <p>
+      Wear the curls long when you want the drama.
+      Pull it into a bun when you want something cleaner.
+      The beauty is that you get to decide what version of you shows up today.
+    </p>
+
+  </div>
+
+
+  <!-- ===========================
+  DETAIL PROOF
+  =========================== -->
+
+  <div class="long-detail-showcase">
+
+    <div class="long-detail-image">
+
+      <img
+        src="NothingStopsYou.JPG"
+        alt="Close view of the Long GlamCurl ponytail attachment"
+      >
+
+    </div>
+
+    <div class="long-detail-copy">
+
+      <span>
+        NOTHING SHOULD GIVE IT AWAY.
+      </span>
+
+      <h3>
+        Even The Details<br>
+        Look Intentional.
+      </h3>
+
+      <p>
+        From the way it joins your existing style to the way the curls fall,
+        Long GlamCurl is designed to look like part of the hairstyle —
+        not something you simply added to it.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===========================
+  FINAL LONG LOOK
+  =========================== -->
+
+  <div class="long-entrance">
+
+    <div class="long-entrance-copy">
+
+      <span>
+        WHEN YOU WANT THE FULL EFFECT
+      </span>
+
+      <h3>
+        Make Your Entrance Known.
+      </h3>
+
+      <p>
+        Because sometimes your hair doesn't need to whisper.
+        It can arrive before you do.
+      </p>
+
+    </div>
+
+    <div class="long-entrance-image">
+
+      <img
+        src="MakeYourEntranceKnown.JPG"
+        alt="Woman wearing the Long GlamCurl ponytail"
+      >
+
+    </div>
+
+  </div>
+
+
+  <!-- ===========================
+  BOTTOM STATEMENT
+  =========================== -->
+
+  <div class="long-versatility-bottom">
+
+    <h3>
+      One Ponytail.<br>
+      More Possibilities.
+    </h3>
+
+    <p>
+      Long. Bold. Soft. Styled.
+      However you wear it, it still feels like you.
+    </p>
+
+  </div>
+
+</section>  
 
 
 
