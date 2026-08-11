@@ -1466,6 +1466,66 @@ MOBILE
 }
     
 
+  /* ===========================
+FIX GLAMCURl IMAGE CROPPING
+=========================== */
+
+.long-look-showcase {
+  align-items: start;
+}
+
+.long-look-main,
+.long-look-bun {
+  min-height: 0 !important;
+  height: auto !important;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.long-look-main img,
+.long-look-bun img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+/* Keep the detail and entrance photographs natural */
+
+.long-detail-image img,
+.long-entrance-image img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .long-look-main,
+  .long-look-bun,
+  .long-detail-image,
+  .long-entrance-image {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .long-look-main img,
+  .long-look-bun img,
+  .long-detail-image img,
+  .long-entrance-image img {
+    width: 100%;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+}  
     
     
     
