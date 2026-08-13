@@ -967,212 +967,278 @@ text-align:left;
 }
 
 /* HERO VISUAL */
+/* =========================================================
+   LONG GLAMCURL — THREE-IMAGE STORY
+   ========================================================= */
+
 .long-look-showcase {
   max-width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 24px;
-  align-items: start;
+  grid-template-columns: 1.05fr 0.72fr 0.72fr;
+  gap: 20px;
+  align-items: stretch;
 }
+
+
+/* =========================================================
+   IMAGE CONTAINERS
+   ========================================================= */
 
 .long-look-main,
 .long-look-bun,
-.long-detail-image,
-.long-entrance-image {
+.long-look-third {
+  position: relative;
   overflow: hidden;
-  border-radius: 24px;
-  background: #f7f5f3;
+  border-radius: 26px;
+  background: #f5f2ef;
 }
+
+
+/*
+   The first image is NOT allowed to become a giant
+   full-screen image anymore.
+*/
+
+.long-look-main {
+  min-height: 560px;
+}
+
+
+/*
+   The two supporting images are deliberately smaller.
+*/
+
+.long-look-bun,
+.long-look-third {
+  min-height: 560px;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
 
 .long-look-main img,
 .long-look-bun img,
-.long-detail-image img,
-.long-entrance-image img {
-  display: block;
+.long-look-third img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
+
+
+/*
+   Keep the actual long-length image visually useful
+   without letting the excessive back view dominate.
+*/
+
+.long-look-main img {
+  object-position: center center;
+}
+
+
+/*
+   Bun image.
+*/
+
+.long-look-bun img {
+  object-position: center center;
+}
+
+
+/*
+   Action / styling image.
+*/
+
+.long-look-third img {
+  object-position: center center;
+}
+
+
+/* =========================================================
+   LABELS — THE ORIGINAL BOLDER FEEL
+   ========================================================= */
 
 .long-look-label,
-.long-bun-label {
-  padding: 18px 20px 20px;
-  background: #fff;
-  border-top: 1px solid #eee;
+.long-bun-label,
+.long-third-label {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+
+  padding: 20px 20px 21px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.10);
+
+  backdrop-filter: blur(8px);
+
+  text-align: center;
 }
 
+
+/* =========================================================
+   LABEL SMALL TEXT
+   ========================================================= */
+
 .long-look-label span,
-.long-bun-label span {
+.long-bun-label span,
+.long-third-label span {
   display: block;
-  margin-bottom: 7px;
+
+  margin-bottom: 8px;
+
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: 1.8px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+
   text-transform: uppercase;
 }
 
+
+/* =========================================================
+   LABEL MAIN TEXT
+   ========================================================= */
+
 .long-look-label strong,
-.long-bun-label strong {
+.long-bun-label strong,
+.long-third-label strong {
   display: block;
+
   font-size: 20px;
-  line-height: 1.25;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-/* REVEAL */
-.long-versatility-reveal {
-  max-width: 720px;
-  margin: 105px auto 110px;
-  text-align: center;
+
+/* =========================================================
+   MAKE THE MAIN MESSAGE SLIGHTLY MORE IMPORTANT
+   ========================================================= */
+
+.long-look-label {
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  padding: 22px 24px 23px;
+
+  border-radius: 19px;
 }
 
-.long-versatility-reveal .long-versatility-small {
-  margin-bottom: 15px;
+.long-look-label strong {
+  font-size: 23px;
 }
 
-.long-versatility-reveal h3 {
-  margin: 0 0 20px;
-  font-size: clamp(34px, 4.5vw, 54px);
-  line-height: 1.06;
-  letter-spacing: -1.5px;
+
+/* =========================================================
+   SUPPORTING IMAGES — SLIGHTLY MORE COMPACT LABELS
+   ========================================================= */
+
+.long-bun-label,
+.long-third-label {
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+
+  padding: 17px 16px 18px;
+
+  border-radius: 16px;
 }
 
-.long-versatility-reveal p {
-  max-width: 650px;
-  margin: 0 auto;
-  color: #666;
+.long-bun-label strong,
+.long-third-label strong {
   font-size: 18px;
-  line-height: 1.75;
 }
 
-/* DETAIL */
-.long-detail-showcase {
-  max-width: 1050px;
-  margin: 0 auto 110px;
-  display: grid;
-  grid-template-columns: .85fr 1.15fr;
-  gap: 65px;
-  align-items: center;
+
+/* =========================================================
+   SUBTLE IMAGE INTERACTION
+   ========================================================= */
+
+.long-look-main img,
+.long-look-bun img,
+.long-look-third img {
+  transition: transform 0.6s ease;
 }
 
-.long-detail-copy {
-  max-width: 500px;
+.long-look-main:hover img,
+.long-look-bun:hover img,
+.long-look-third:hover img {
+  transform: scale(1.025);
 }
 
-.long-detail-copy > span {
-  margin-bottom: 15px;
-}
 
-.long-detail-copy h3 {
-  margin: 0 0 20px;
-  font-size: clamp(36px, 4.5vw, 56px);
-  line-height: 1.04;
-  letter-spacing: -1.5px;
-}
-
-.long-detail-copy p {
-  margin: 0;
-  color: #666;
-  font-size: 18px;
-  line-height: 1.75;
-}
-
-/* FINAL ENTRANCE */
-.long-entrance {
-  max-width: 1120px;
-  margin: 0 auto 105px;
-  display: grid;
-  grid-template-columns: .85fr 1.15fr;
-  align-items: stretch;
-  overflow: hidden;
-  border-radius: 28px;
-  background: #f7f5f3;
-}
-
-.long-entrance-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px;
-}
-
-.long-entrance-copy > span {
-  margin-bottom: 16px;
-}
-
-.long-entrance-copy h3 {
-  margin: 0 0 18px;
-  font-size: clamp(36px, 4.5vw, 56px);
-  line-height: 1.04;
-  letter-spacing: -1.5px;
-}
-
-.long-entrance-copy p {
-  max-width: 430px;
-  margin: 0;
-  color: #666;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-.long-entrance-image {
-  border-radius: 0;
-}
-
-/* BOTTOM */
-.long-versatility-bottom {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.long-versatility-bottom h3 {
-  margin: 0 0 14px;
-  font-size: clamp(34px, 4.5vw, 52px);
-  line-height: 1.06;
-  letter-spacing: -1.5px;
-}
-
-.long-versatility-bottom p {
-  max-width: 600px;
-  margin: 0 auto;
-  color: #666;
-  font-size: 18px;
-  line-height: 1.7;
-}
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 768px) {
-  .long-versatility {
-    padding: 70px 16px 80px;
-  }
 
-  .long-versatility-intro {
-    margin-bottom: 38px;
-  }
-
-  .long-versatility-intro h2 {
-    font-size: 36px;
-    letter-spacing: -1px;
-  }
-
-  .long-versatility-intro p,
-  .long-versatility-reveal p,
-  .long-detail-copy p,
-  .long-entrance-copy p,
-  .long-versatility-bottom p {
-    font-size: 16px;
-  }
-
-  .long-look-showcase,
-  .long-detail-showcase,
-  .long-entrance {
+  .long-look-showcase {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .long-look-bun {
-    margin-top: 0;
+
+  /*
+     Mobile can give each image more height because
+     they are viewed one at a time.
+  */
+
+  .long-look-main {
+    min-height: 520px;
   }
 
+  .long-look-bun {
+    min-height: 460px;
+  }
+
+  .long-look-third {
+    min-height: 460px;
+  }
+
+
+  /* -------------------------
+     LABELS
+     ------------------------- */
+
+  .long-look-label,
+  .long-bun-label,
+  .long-third-label {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+
+  .long-look-label {
+    padding: 19px 18px 20px;
+  }
+
+  .long-look-label strong {
+    font-size: 21px;
+  }
+
+
+  .long-bun-label,
+  .long-third-label {
+    padding: 16px 15px 17px;
+  }
+
+  .long-bun-label strong,
+  .long-third-label strong {
+    font-size: 18px;
+  }
+
+}
   .long-versatility-reveal {
     margin: 75px auto 80px;
   }
