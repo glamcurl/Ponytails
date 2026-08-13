@@ -1276,6 +1276,294 @@ text-align:left;
   }
 }
 
+
+/* =========================================================
+   LONG GLAMCURL — CONTENT AFTER THE 3-IMAGE SHOWCASE
+   ========================================================= */
+
+
+/* =========================================================
+   1. VERSATILITY REVEAL
+   ========================================================= */
+
+.long-versatility-reveal {
+  max-width: 760px;
+  margin: 75px auto 80px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.long-versatility-reveal h3 {
+  margin: 12px 0 18px;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.1;
+}
+
+.long-versatility-reveal p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #666;
+}
+
+
+/* =========================================================
+   2. NOTHING SHOULD GIVE IT AWAY
+   ========================================================= */
+
+.long-detail-showcase {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+
+  gap: 45px;
+
+  align-items: center;
+}
+
+
+/* THIS IS THE IMPORTANT PART:
+   keep NothingStopsYou SMALL
+*/
+
+.long-detail-image {
+  width: 100%;
+  max-width: 360px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.long-detail-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  max-width: 100%;
+
+  margin: 0;
+}
+
+
+.long-detail-copy {
+  max-width: 500px;
+}
+
+.long-detail-copy > span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.long-detail-copy h3 {
+  margin: 0 0 18px;
+
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+}
+
+.long-detail-copy p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #555;
+}
+
+
+/* =========================================================
+   3. MAKE YOUR ENTRANCE KNOWN
+   ========================================================= */
+
+.long-entrance {
+  max-width: 1000px;
+
+  margin: 0 auto 80px;
+
+  display: grid;
+  grid-template-columns: 1fr 0.75fr;
+
+  gap: 45px;
+
+  align-items: center;
+}
+
+
+/* TEXT */
+
+.long-entrance-copy {
+  max-width: 500px;
+}
+
+.long-entrance-copy > span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.long-entrance-copy h3 {
+  margin: 0 0 18px;
+
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+}
+
+.long-entrance-copy p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #555;
+}
+
+
+/* IMAGE — ALSO KEPT SMALL */
+
+.long-entrance-image {
+  width: 100%;
+  max-width: 360px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.long-entrance-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  max-width: 100%;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   4. FINAL LONG MESSAGE
+   ========================================================= */
+
+.long-versatility-bottom {
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  padding: 10px 20px 90px;
+
+  text-align: center;
+}
+
+.long-versatility-bottom h3 {
+  margin: 0 0 18px;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.1;
+}
+
+.long-versatility-bottom p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #555;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .long-versatility-reveal {
+    margin: 55px auto 65px;
+    padding: 0 16px;
+  }
+
+
+  /* NOTHING SHOULD GIVE IT AWAY */
+
+  .long-detail-showcase {
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+
+    margin: 0 auto 65px;
+
+    padding: 0 16px;
+  }
+
+  .long-detail-image {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .long-detail-copy {
+    max-width: none;
+    padding: 0 4px;
+
+    text-align: center;
+  }
+
+
+  /* MAKE YOUR ENTRANCE KNOWN */
+
+  .long-entrance {
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+
+    margin: 0 auto 65px;
+
+    padding: 0 16px;
+  }
+
+  .long-entrance-image {
+    order: -1;
+
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .long-entrance-copy {
+    max-width: none;
+
+    text-align: center;
+  }
+
+
+  .long-versatility-bottom {
+    padding: 5px 16px 65px;
+  }
+
+}
+
+
+
+    
 </style>
 </head>
   
