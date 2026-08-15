@@ -1562,6 +1562,153 @@ text-align:left;
 }
 
 
+/* =========================================================
+   ALTERNATING LONG GLAMCURL STORY
+   ========================================================= */
+
+.long-detail-showcase,
+.long-entrance {
+  max-width: 980px;
+  margin: 0 auto 90px;
+
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 60px;
+  align-items: center;
+}
+
+
+/* =========================================================
+   PICTURE A — LEFT
+   ========================================================= */
+
+.long-detail-image {
+  width: 100%;
+  max-width: 330px;
+  justify-self: center;
+
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.long-detail-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+
+/* =========================================================
+   CONTENT A — RIGHT
+   ========================================================= */
+
+.long-detail-copy {
+  max-width: 500px;
+}
+
+.long-detail-copy > span,
+.long-entrance-copy > span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.long-detail-copy h3,
+.long-entrance-copy h3 {
+  margin: 0 0 18px;
+
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.1;
+}
+
+.long-detail-copy p,
+.long-entrance-copy p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+
+/* =========================================================
+   SECTION B
+   CONTENT B — LEFT
+   PICTURE B — RIGHT
+   ========================================================= */
+
+.long-entrance {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+
+/* Content stays on LEFT */
+
+.long-entrance-copy {
+  max-width: 500px;
+}
+
+
+/* Picture moves to RIGHT */
+
+.long-entrance-image {
+  width: 100%;
+  max-width: 330px;
+  justify-self: center;
+
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.long-entrance-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .long-detail-showcase,
+  .long-entrance {
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+
+    margin-bottom: 70px;
+    padding: 0 16px;
+  }
+
+  .long-detail-image,
+  .long-entrance-image {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .long-detail-copy,
+  .long-entrance-copy {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+}
+
+
+
+    
 
     
 </style>
