@@ -1561,86 +1561,83 @@ text-align:left;
 
 }
 
-
 /* =========================================================
-   ALTERNATING LONG GLAMCURL STORY
+   LONG GLAMCURL — ALTERNATING DETAIL SECTIONS
+   IMAGE ↔ CONTENT
    ========================================================= */
 
 .long-detail-showcase,
 .long-entrance {
-  max-width: 980px;
-  margin: 0 auto 90px;
-
+  max-width: 1050px;
+  margin: 85px auto;
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
-
-  gap: 60px;
+  gap: 55px;
   align-items: center;
 }
 
 
 /* =========================================================
-   PICTURE A — LEFT
+   IMAGE SIZE
    ========================================================= */
 
-.long-detail-image {
+.long-detail-image,
+.long-entrance-image {
   width: 100%;
-  max-width: 330px;
-  justify-self: center;
-
+  max-width: 430px;
   overflow: hidden;
   border-radius: 22px;
+  background: #f7f4f2;
 }
 
-.long-detail-image img {
-  display: block;
+.long-detail-image img,
+.long-entrance-image img {
   width: 100%;
   height: auto;
-  margin: 0;
+  max-height: 520px;
+  display: block;
+  object-fit: cover;
 }
 
 
 /* =========================================================
-   CONTENT A — RIGHT
+   CONTENT
    ========================================================= */
 
-.long-detail-copy {
+.long-detail-copy,
+.long-entrance-copy {
   max-width: 500px;
 }
 
 .long-detail-copy > span,
 .long-entrance-copy > span {
   display: block;
-
-  margin-bottom: 14px;
-
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .long-detail-copy h3,
 .long-entrance-copy h3 {
   margin: 0 0 18px;
-
-  font-size: clamp(30px, 4vw, 46px);
-  line-height: 1.1;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.08;
 }
 
 .long-detail-copy p,
 .long-entrance-copy p {
   margin: 0;
-
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.75;
   color: #555;
 }
 
 
 /* =========================================================
-   SECTION B
-   CONTENT B — LEFT
-   PICTURE B — RIGHT
+   SECOND ROW — REVERSE IT
+   CONTENT LEFT / IMAGE RIGHT
    ========================================================= */
 
 .long-entrance {
@@ -1648,29 +1645,17 @@ text-align:left;
 }
 
 
-/* Content stays on LEFT */
+/* Content goes on the LEFT */
 
 .long-entrance-copy {
-  max-width: 500px;
+  order: 1;
 }
 
 
-/* Picture moves to RIGHT */
+/* Picture goes on the RIGHT */
 
 .long-entrance-image {
-  width: 100%;
-  max-width: 330px;
-  justify-self: center;
-
-  overflow: hidden;
-  border-radius: 22px;
-}
-
-.long-entrance-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
+  order: 2;
 }
 
 
@@ -1684,24 +1669,47 @@ text-align:left;
   .long-entrance {
     display: flex;
     flex-direction: column;
-
-    gap: 28px;
-
-    margin-bottom: 70px;
+    gap: 30px;
+    margin: 65px auto;
     padding: 0 16px;
   }
 
   .long-detail-image,
   .long-entrance-image {
     width: 100%;
-    max-width: 320px;
+    max-width: 430px;
+    margin: 0 auto;
   }
 
   .long-detail-copy,
   .long-entrance-copy {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     text-align: center;
+  }
+
+  .long-detail-copy h3,
+  .long-entrance-copy h3 {
+    font-size: 32px;
+  }
+
+  .long-detail-copy p,
+  .long-entrance-copy p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /*
+     Keep the second section in normal
+     content → image order on mobile.
+  */
+
+  .long-entrance-copy {
+    order: 1;
+  }
+
+  .long-entrance-image {
+    order: 2;
   }
 
 }
