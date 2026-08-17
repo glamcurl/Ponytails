@@ -2038,7 +2038,185 @@ text-align:left;
 
 }    
 
-    
+
+/* =========================================
+   GLAMCURl DETAILS — HORIZONTAL STACK
+========================================= */
+
+.glamcurl-details {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 90px 20px 100px;
+}
+
+.glamcurl-details-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.glamcurl-details-intro > span,
+.detail-copy > span {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6b2ea3;
+  margin-bottom: 12px;
+}
+
+.glamcurl-details-intro h2 {
+  font-size: clamp(36px, 5vw, 54px);
+  line-height: 1.08;
+  margin: 0 0 18px;
+}
+
+.glamcurl-details-intro p {
+  max-width: 650px;
+  margin: auto;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* EACH IMAGE + CONTENT STACKS VERTICALLY */
+
+.detail-item {
+  margin-bottom: 75px;
+}
+
+.detail-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: cover;
+  border-radius: 22px;
+  background: #f7f4f2;
+}
+
+
+/* CONTENT ALWAYS BELOW IMAGE */
+
+.detail-copy {
+  max-width: 720px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+
+.detail-copy h3 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.1;
+}
+
+.detail-copy p {
+  margin: 0 auto;
+  max-width: 650px;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+
+/* CTA BETWEEN DETAIL GROUPS */
+
+.detail-cta {
+  max-width: 650px;
+  margin: 20px auto 80px;
+  padding: 45px 30px;
+  text-align: center;
+  border-radius: 24px;
+  background: #f7f1fb;
+}
+
+.detail-cta h3 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.detail-cta p {
+  margin: 0 0 25px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.detail-cta-button {
+  display: inline-block;
+  padding: 15px 28px;
+  background: #6b2ea3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: .25s ease;
+}
+
+.detail-cta-button:hover {
+  transform: translateY(-3px);
+}
+
+.detail-cta-final {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .glamcurl-details {
+    padding: 65px 16px 80px;
+  }
+
+  .glamcurl-details-intro {
+    margin-bottom: 40px;
+  }
+
+  .glamcurl-details-intro p {
+    font-size: 16px;
+  }
+
+  .detail-item {
+    margin-bottom: 55px;
+  }
+
+  .detail-item img {
+    width: 100%;
+    max-height: none;
+    border-radius: 18px;
+  }
+
+  .detail-copy {
+    margin-top: 22px;
+    padding: 0 4px;
+  }
+
+  .detail-copy h3 {
+    font-size: 30px;
+  }
+
+  .detail-copy p {
+    font-size: 16px;
+  }
+
+  .detail-cta {
+    padding: 35px 22px;
+    margin-bottom: 60px;
+  }
+
+  .detail-cta h3 {
+    font-size: 27px;
+  }
+
+  .detail-cta-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
     
 </style>
@@ -3922,18 +4100,176 @@ and wear it whenever you like.
   
 
 <div class="section" id="details">
-<h2>See The Details</h2>
+<!-- =========================================
+     GLAMCURl DETAILS — AFTER DELIVERY
+========================================= -->
 
-<img src="Upclosemidlengthpony.png" width="250">
-<p>Close-up of the natural curl texture.</p>
+<section class="glamcurl-details" id="details">
 
-<img src="clipshowingponytail.png" width="250">
-<p>Secure dual comb clips for firm hold.</p>
+  <div class="glamcurl-details-intro">
+    <span>SEE THE DETAILS</span>
+    <h2>Beautiful From Every Angle.</h2>
+    <p>
+      Before you order, take a closer look at the details that make
+      GlamCurl easy to wear, easy to style and easy to love.
+    </p>
+  </div>
 
-<img src="MidPonytailwithclip.png" width="250">
-<p>Easy attachment system with adjustable strap.</p>
 
-</div>
+  <!-- 01 -->
+  <div class="detail-item">
+
+    <img
+      src="Upclosemidlengthpony.png"
+      alt="Close-up view of GlamCurl curls"
+    >
+
+    <div class="detail-copy">
+      <span>THE CURLS</span>
+      <h3>Soft Curls. Natural Movement.</h3>
+      <p>
+        Look closely and you'll see the texture that gives GlamCurl
+        its natural finish. Soft curls, full enough to give you
+        beautiful volume without making the style feel heavy.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- 02 -->
+  <div class="detail-item">
+
+    <img
+      src="clipshowingponytail.png"
+      alt="GlamCurl dual comb clips"
+    >
+
+    <div class="detail-copy">
+      <span>THE HOLD</span>
+      <h3>Secure It. Tighten It. Go.</h3>
+      <p>
+        The dual comb clips help secure the ponytail to your hair,
+        while the adjustable strap gives you that extra fit so
+        you can move confidently without constantly checking your hair.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- CTA 1 -->
+  <div class="detail-cta">
+    <h3>Ready To Find Your Length?</h3>
+    <p>Choose the GlamCurl that feels most like you.</p>
+
+    <a
+      href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20want%20to%20find%20my%20new%20length."
+      class="detail-cta-button"
+      target="_blank"
+    >
+      Find My Length →
+    </a>
+  </div>
+
+
+  <!-- 03 -->
+  <div class="detail-item">
+
+    <img
+      src="MidPonytailwithclip.png"
+      alt="GlamCurl ponytail attachment system"
+    >
+
+    <div class="detail-copy">
+      <span>THE ATTACHMENT</span>
+      <h3>Designed To Fit Into Your Routine.</h3>
+      <p>
+        Attach it to your bun, tighten the strap and adjust it
+        until it feels right. No complicated installation.
+        No long salon process.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- 04 — YOUR NEW UNUSED DETAIL IMAGE -->
+  <div class="detail-item">
+
+    <img
+      src="opencloseview.JPG"
+      alt="Detailed view of GlamCurl ponytail"
+    >
+
+    <div class="detail-copy">
+      <span>LOOK CLOSER</span>
+      <h3>Nothing Is Left To Chance.</h3>
+      <p>
+        From the finish to the way the hair falls, every detail is
+        designed to help GlamCurl blend beautifully with your style.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- CTA 2 -->
+  <div class="detail-cta">
+    <h3>You've Seen The Details.</h3>
+    <p>Now choose the length that belongs to you.</p>
+
+    <a
+      href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20want%20to%20choose my GlamCurl length."
+      class="detail-cta-button"
+      target="_blank"
+    >
+      Choose My GlamCurl →
+    </a>
+  </div>
+
+
+  <!-- 05 — ANOTHER UNUSED IMAGE -->
+  <div class="detail-item">
+
+    <img
+      src="closeview1.JPG"
+      alt="Close detailed view of GlamCurl"
+    >
+
+    <div class="detail-copy">
+      <span>THE FINISH</span>
+      <h3>Close Enough To See The Difference.</h3>
+      <p>
+        This is what GlamCurl looks like when you stop and really
+        look at it — detailed, full and made to complement the
+        hairstyle you're already wearing.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- CTA 3 -->
+  <div class="detail-cta detail-cta-final">
+
+    <h3>Your New Look Is Waiting.</h3>
+
+    <p>
+      Short. Mid. Long. Pick the version of you that's showing up today.
+    </p>
+
+    <a
+      href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20am%20ready%20to%20order."
+      class="detail-cta-button"
+      target="_blank"
+    >
+      Order My GlamCurl →
+    </a>
+
+  </div>
+
+</section>
 
 <div class="section" id="benefits">
 <h2>Why Choose GlamCurl?</h2>
