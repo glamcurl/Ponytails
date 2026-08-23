@@ -2217,92 +2217,61 @@ text-align:left;
     width: 100%;
     box-sizing: border-box;
   }
-
 /* ===========================
-   LIMITED DELIVERY OFFER
+   LIMITED LAGOS DELIVERY OFFER
    =========================== */
 
 .limited-delivery-offer {
   width: 100%;
-  padding: 45px 20px;
-  margin: 0;
+  padding: 55px 20px;
   box-sizing: border-box;
 }
 
 .limited-offer-inner {
-  position: relative;
   width: min(900px, 100%);
   margin: 0 auto;
-  padding: 44px 35px 38px;
+  padding: 42px 30px;
   box-sizing: border-box;
 
+  text-align: center;
+
   background: #f7efe8;
-  border: 1px solid #ead9cc;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 24px;
 
-  text-align: center;
-  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
 }
-
-/* subtle top accent */
-.limited-offer-inner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: #8b5e4b;
-}
-
-/* small label */
 
 .limited-offer-eyebrow {
   display: inline-block;
   margin-bottom: 14px;
-  padding: 7px 13px;
 
-  background: #ffffff;
-  border: 1px solid #e4d1c3;
-  border-radius: 999px;
-
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 1.7px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-/* headline */
-
 .limited-offer-inner h2 {
-  max-width: 720px;
   margin: 0 auto 15px;
+  max-width: 700px;
 
-  font-size: clamp(29px, 5vw, 46px);
+  font-size: clamp(28px, 5vw, 48px);
   line-height: 1.08;
   font-weight: 800;
-
-  color: #241b17;
 }
-
-/* description */
 
 .limited-offer-inner p {
   max-width: 650px;
   margin: 0 auto;
 
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
-
-  color: #5c4b43;
 }
 
 .limited-offer-inner p strong {
-  color: #241b17;
   font-weight: 800;
 }
-
-/* qualification details */
 
 .limited-offer-note {
   display: flex;
@@ -2310,21 +2279,13 @@ text-align:left;
   align-items: center;
   flex-wrap: wrap;
 
-  gap: 9px;
-  margin: 23px auto 27px;
+  gap: 10px;
+  margin: 22px 0 26px;
 
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 700;
   letter-spacing: .3px;
-
-  color: #5a4034;
 }
-
-.limited-offer-note span {
-  white-space: nowrap;
-}
-
-/* CTA */
 
 .limited-offer-cta {
   display: inline-flex;
@@ -2332,42 +2293,33 @@ text-align:left;
   justify-content: center;
 
   min-height: 52px;
-  padding: 0 30px;
-
-  background: #241b17;
-  color: #ffffff;
+  padding: 0 28px;
 
   border-radius: 999px;
 
   text-decoration: none;
 
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 800;
 
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+  background: #111;
+  color: #fff;
+
+  transition: transform .2s ease, opacity .2s ease;
 }
 
 .limited-offer-cta:hover {
   transform: translateY(-2px);
-
-  box-shadow:
-    0 8px 20px rgba(36, 27, 23, .16);
+  opacity: .9;
 }
-
-/* fine print */
 
 .limited-offer-inner small {
   display: block;
-
-  max-width: 500px;
-  margin: 14px auto 0;
+  margin-top: 14px;
 
   font-size: 11px;
   line-height: 1.5;
-
-  color: #806d63;
+  opacity: .7;
 }
 
 
@@ -2378,11 +2330,11 @@ text-align:left;
 @media (max-width: 600px) {
 
   .limited-delivery-offer {
-    padding: 32px 15px;
+    padding: 38px 16px;
   }
 
   .limited-offer-inner {
-    padding: 36px 20px 30px;
+    padding: 32px 20px;
     border-radius: 20px;
   }
 
@@ -2392,28 +2344,20 @@ text-align:left;
   }
 
   .limited-offer-inner p {
-    font-size: 14.5px;
+    font-size: 15px;
     line-height: 1.65;
   }
 
   .limited-offer-note {
     gap: 7px;
-    margin-top: 20px;
-    margin-bottom: 24px;
-
-    font-size: 10.5px;
+    font-size: 11px;
   }
 
   .limited-offer-cta {
     width: 100%;
     box-sizing: border-box;
   }
-
-  .limited-offer-inner small {
-    font-size: 10px;
-  }
 }
-
   
 </style>
 </head>
