@@ -2582,7 +2582,270 @@ text-align:left;
 }    
 
 
+/* ===========================
+   LIMITED DELIVERY OFFER
+=========================== */
 
+.limited-offer-section {
+  width: 100%;
+  padding: 70px 20px;
+  box-sizing: border-box;
+}
+
+.limited-offer-card {
+  max-width: 1125px;
+  margin: 0 auto;
+  padding: 58px 55px 50px;
+  background: #f7efe8;
+  border: 1px solid #e5d9cf;
+  border-radius: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* LABEL */
+
+.limited-offer-label {
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #111;
+}
+
+
+/* MAIN HEADLINE */
+
+.limited-offer-card h2 {
+  margin: 0 auto 22px;
+  max-width: 850px;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #050505;
+}
+
+
+/* INTRO */
+
+.limited-offer-intro {
+  max-width: 760px;
+  margin: 0 auto 38px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #242424;
+}
+
+
+/* OFFER BREAKDOWN */
+
+.offer-breakdown {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+
+/* INDIVIDUAL LOCATION */
+
+.offer-location {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 25px 24px;
+  background: #ffffff;
+  border: 1px solid #e4dcd5;
+  border-radius: 18px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.offer-icon {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1e7df;
+  font-size: 20px;
+}
+
+
+/* COPY */
+
+.offer-copy {
+  padding-right: 60px;
+}
+
+.offer-copy h3 {
+  margin: 2px 0 7px;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #111;
+}
+
+.offer-copy p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #444;
+}
+
+
+/* FIRST 10 / FIRST 20 */
+
+.offer-count {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+/* QUALIFICATION LINE */
+
+.offer-qualification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 27px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+
+
+/* CTA */
+
+.limited-offer-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+  padding: 19px 34px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.limited-offer-cta:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+
+/* SMALL DISCLAIMER */
+
+.offer-note {
+  margin: 18px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 760px) {
+
+  .limited-offer-section {
+    padding: 45px 14px;
+  }
+
+  .limited-offer-card {
+    padding: 42px 20px 36px;
+    border-radius: 24px;
+  }
+
+  .limited-offer-label {
+    margin-bottom: 18px;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+  }
+
+  .limited-offer-card h2 {
+    font-size: clamp(36px, 10vw, 48px);
+    line-height: 1;
+    letter-spacing: -1.5px;
+  }
+
+  .limited-offer-intro {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .offer-breakdown {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .offer-location {
+    padding: 21px 18px;
+  }
+
+  .offer-copy {
+    padding-right: 55px;
+  }
+
+  .offer-copy h3 {
+    font-size: 17px;
+  }
+
+  .offer-copy p {
+    font-size: 14px;
+  }
+
+  .offer-count {
+    top: 15px;
+    right: 14px;
+    font-size: 9px;
+  }
+
+  .offer-qualification {
+    gap: 7px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+  }
+
+  .limited-offer-cta {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 18px 22px;
+  }
+
+}
 
 
 
