@@ -4783,26 +4783,27 @@ No words. No filters. Just visible curl bounce, movement, and length under real 
 </p>
 
 <a
+ <a
   href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20have%20seen%20the%20GlamCurl%20in%20motion%20and%20I%20want%20to%20choose%20my%20length."
+  target="_blank"
   class="cta-button video-cta"
   data-cta="video_choose_glamcurl"
+  onclick="
+    ttq.track('Contact',{
+      content_name:'GlamCurl Collection',
+      content_type:'product_group',
+      currency:'NGN'
+    });
+
+    mixpanel.track('WhatsApp Clicked',{
+      button:'Video CTA',
+      cta_location:'product_video',
+      cta_action:'choose_glamcurl'
+    });
+  "
 >
   Choose My GlamCurl →
 </a>
-</p>
-
-<a href="https://wa.me/2349137455978" 
-target="_blank"
-onclick="
-ttq.track('Contact',{
-content_name:'GlamCurl Collection',
-content_type:'product_group',
-currency:'NGN'
-});
-
-mixpanel.track('WhatsApp Clicked',{
-
-button:'Bottom Button'
 
 });
 ">
