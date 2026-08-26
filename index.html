@@ -2363,225 +2363,156 @@ text-align:left;
 }
 
 
-/* =========================================================
-   FINAL PRODUCT CHOICE CARDS
-   ========================================================= */
+/* =========================================
+   FINAL CTA / PRICE REMINDER
+   ========================================= */
 
-.final-product-section {
-  padding: 70px 20px 80px;
-  background: #fff;
+.final-cta-section {
+  width: 100%;
+  padding: 80px 20px 90px;
+  background: #faf7fb;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.final-product-section .section-kicker {
-  margin: 0 0 10px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #8b5cf6;
-}
-
-.final-product-section h2 {
-  margin: 0 auto 12px;
-  max-width: 650px;
-  font-size: clamp(30px, 5vw, 46px);
-  line-height: 1.1;
-  font-weight: 800;
-  color: #222;
-}
-
-.final-product-section .section-intro {
-  max-width: 580px;
-  margin: 0 auto 40px;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #666;
-}
-
-
-/* PRODUCT GRID */
-
-.final-product-grid {
-  width: 100%;
-  max-width: 1120px;
+.final-cta-content {
+  width: min(760px, 100%);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  align-items: stretch;
 }
 
-
-/* PRODUCT CARD */
-
-.final-product-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 18px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
-  text-align: left;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.final-product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.11);
-}
-
-
-/* PRODUCT IMAGE */
-
-.final-product-card .product-image-wrap {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: #f8f6f8;
-}
-
-.final-product-card .product-image-wrap img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.35s ease;
-}
-
-.final-product-card:hover .product-image-wrap img {
-  transform: scale(1.03);
-}
-
-
-/* CARD CONTENT */
-
-.final-product-card .product-content {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 22px 20px 20px;
-}
-
-.final-product-card .product-label {
-  margin-bottom: 6px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
+.final-cta-eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #999;
+  color: #8b4b78;
 }
 
-.final-product-card h3 {
-  margin: 0 0 7px;
-  font-size: 23px;
-  line-height: 1.2;
+.final-cta-section h2 {
+  margin: 0 auto 18px;
+  max-width: 680px;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.08;
   font-weight: 800;
-  color: #222;
+  color: #241824;
 }
 
-.final-product-card .product-price {
-  margin: 0 0 20px;
-  font-size: 21px;
-  line-height: 1.2;
-  font-weight: 800;
-  color: #8b5cf6;
+.final-cta-text {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #625963;
 }
 
-
-/* CTA */
-
-.final-product-card .product-cta {
+.final-price-row {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px auto;
+}
+
+.price-pill {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 48px;
-  margin-top: auto;
-  padding: 13px 18px;
-  border: 0;
-  border-radius: 10px;
-  background: #222;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
-}
-
-.final-product-card .product-cta:hover {
-  background: #8b5cf6;
-  transform: translateY(-1px);
-}
-
-
-/* MOST LOVED / FEATURED CARD */
-
-.final-product-card.featured {
-  border: 2px solid #8b5cf6;
-}
-
-.final-product-card .featured-badge {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  z-index: 2;
-  padding: 7px 11px;
+  padding: 10px 17px;
+  border: 1px solid #dfd2dd;
   border-radius: 999px;
-  background: #8b5cf6;
-  color: #fff;
-  font-size: 11px;
+  background: #ffffff;
+  color: #302330;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.final-cta-support {
+  max-width: 610px;
+  margin: 0 auto 28px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #625963;
+}
+
+.final-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 14px 30px;
+  border-radius: 999px;
+  background: #6f3d63;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.98rem;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  line-height: 1;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.final-cta-button:hover {
+  transform: translateY(-2px);
+  background: #5d3153;
+  box-shadow: 0 10px 24px rgba(71, 37, 64, 0.18);
+}
+
+.final-cta-button:focus-visible {
+  outline: 3px solid rgba(111, 61, 99, 0.25);
+  outline-offset: 4px;
+}
+
+.final-cta-delivery {
+  margin: 14px 0 0;
+  font-size: 0.82rem;
+  color: #817580;
 }
 
 
-/* MOBILE */
-
-@media (max-width: 850px) {
-  .final-product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 720px;
-  }
-}
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 600px) {
-  .final-product-section {
-    padding: 55px 16px 65px;
+
+  .final-cta-section {
+    padding: 64px 18px 72px;
   }
 
-  .final-product-section h2 {
-    font-size: 32px;
+  .final-cta-section h2 {
+    font-size: 2rem;
   }
 
-  .final-product-section .section-intro {
-    font-size: 15px;
-    margin-bottom: 30px;
+  .final-cta-text {
+    font-size: 0.98rem;
+    line-height: 1.65;
   }
 
-  .final-product-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
+  .final-price-row {
+    gap: 8px;
   }
 
-  .final-product-card .product-image-wrap {
-    aspect-ratio: 1 / 1;
+  .price-pill {
+    padding: 9px 13px;
+    font-size: 0.82rem;
   }
 
-  .final-product-card .product-content {
-    padding: 20px 18px 18px;
+  .final-cta-support {
+    font-size: 0.95rem;
   }
-}    
 
-
+  .final-cta-button {
+    width: 100%;
+    max-width: 330px;
+    min-height: 54px;
+  }
+}
 /* ===========================
    LIMITED DELIVERY OFFER
 =========================== */
@@ -5127,249 +5058,62 @@ Chat on WhatsApp
 
 
 
-  
+ <!-- FINAL CTA / PRICE REMINDER -->
+<section class="final-cta-section" id="final-order-cta">
 
+  <div class="final-cta-content">
 
-  <!-- ===========================
-FINAL PRODUCT CHOICE
-=========================== -->
-
-<section class="final-product-choice">
-
-  <div class="final-choice-header">
-
-    <span class="final-choice-tag">✨ YOUR NEW LOOK IS WAITING</span>
+    <p class="final-cta-eyebrow">
+      ✨ YOUR NEW LENGTH IS WAITING
+    </p>
 
     <h2>
-      So... Which GlamCurl Is Yours?
+      Your New Length Is Only 3 Minutes Away.
     </h2>
 
-    <p>
-      You've seen how it looks. You've seen how it moves.
-      You've seen what other women experienced.
+    <p class="final-cta-text">
+      No salon appointment. No complicated installation.
+      No need to start your hairstyle all over again.
     </p>
 
-    <p>
-      Now all that's left is choosing the length
-      that feels most like you.
-    </p>
+    <div class="final-price-row" aria-label="GlamCurl prices">
 
-  </div>
+      <span class="price-pill">
+        Short — ₦13,500
+      </span>
 
+      <span class="price-pill">
+        Mid — ₦18,500
+      </span>
 
-  <div class="final-product-grid">
-
-
-    <!-- SHORT -->
-    <div class="final-product-card">
-
-      <div class="final-product-image">
-        <img
-          src="https://glamcurl.github.io/Ponytails/shortponytail.png"
-          alt="Short GlamCurl Ponytail"
-        >
-      </div>
-
-      <div class="final-product-content">
-
-        <span class="final-product-label">
-          🌸 EVERYDAY BEAUTY
-        </span>
-
-        <h3>
-          Short GlamCurl
-        </h3>
-
-        <p class="final-product-description">
-          Effortless, soft and easy to wear.
-          For the days you just want to look beautiful
-          without doing too much.
-        </p>
-
-        <div class="final-product-price">
-          ₦13,500
-        </div>
-
-        <ul class="final-product-benefits">
-          <li>✔ Lightweight</li>
-          <li>✔ Easy to remove</li>
-          <li>✔ Everyday style</li>
-          <li>✔ Ready in minutes</li>
-        </ul>
-
-        <a
-          href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20want%20the%20Short%20GlamCurl%20at%20%E2%82%A613%2C500.%20Can%20you%20help%20me%20order%3F"
-          class="final-product-button"
-        >
-          I Want Short →
-        </a>
-
-      </div>
+      <span class="price-pill">
+        Long — ₦25,000
+      </span>
 
     </div>
 
-
-    <!-- MID -->
-    <div class="final-product-card featured">
-
-      <div class="final-product-badge">
-        💜 MOST LOVED
-      </div>
-
-      <div class="final-product-image">
-        <img
-          src="https://glamcurl.github.io/Ponytails/Middlelenthponytail.png"
-          alt="Mid GlamCurl Ponytail"
-        >
-      </div>
-
-      <div class="final-product-content">
-
-        <span class="final-product-label">
-          ✨ THE SWEET SPOT
-        </span>
-
-        <h3>
-          Mid GlamCurl
-        </h3>
-
-        <p class="final-product-description">
-          Not too short. Not too long.
-          Just the right balance of length,
-          curls and everyday elegance.
-        </p>
-
-        <div class="final-product-price">
-          ₦18,500
-        </div>
-
-        <ul class="final-product-benefits">
-          <li>✔ Natural-looking volume</li>
-          <li>✔ Lightweight</li>
-          <li>✔ Reusable</li>
-          <li>✔ Perfect everyday length</li>
-        </ul>
-
-        <a
-          href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20want%20the%20Mid%20GlamCurl%20at%20%E2%82%A618%2C500.%20Can%20you help%20me%20order%3F"
-          class="final-product-button"
-        >
-          This Is My Length →
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <!-- LONG -->
-    <div class="final-product-card">
-
-      <div class="final-product-image">
-        <img
-          src="https://glamcurl.github.io/Ponytails/LongPonytail.png"
-          alt="Long GlamCurl Ponytail"
-        >
-      </div>
-
-      <div class="final-product-content">
-
-        <span class="final-product-label">
-          👑 MAKE AN ENTRANCE
-        </span>
-
-        <h3>
-          Long GlamCurl
-        </h3>
-
-        <p class="final-product-description">
-          Extra length. Extra volume.
-          For the days you want your hair
-          to make the entrance before you do.
-        </p>
-
-        <div class="final-product-price">
-          ₦25,000
-        </div>
-
-        <ul class="final-product-benefits">
-          <li>✔ Extra volume</li>
-          <li>✔ Premium finish</li>
-          <li>✔ Long-lasting curls</li>
-          <li>✔ Statement look</li>
-        </ul>
-
-        <a
-          href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20want%20the%20Long%20GlamCurl%20at%20%E2%82%A625%2C000.%20Can%20you help%20me%20order%3F"
-          class="final-product-button"
-        >
-          Give Me The Long One →
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="final-choice-bottom">
-
-    <p>
-      <strong>Still not sure which one?</strong>
-    </p>
-
-    <p>
-      Tell us the look you're going for and we'll help you
-      choose the right GlamCurl.
+    <p class="final-cta-support">
+      Just attach your GlamCurl, adjust it, and step out
+      looking like you planned it all week.
     </p>
 
     <a
-      href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20need%20help%20choosing%20the%20right%20length%20for%20me."
-      class="final-help-button"
+      href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20am%20ready%20to%20order."
+      class="final-cta-button"
+      id="final-order-cta-button"
+      data-cta="final-order"
+      data-cta-location="bottom"
     >
-      Help Me Choose My Length →
+      Order My GlamCurl →
     </a>
+
+    <p class="final-cta-delivery">
+      Delivery available across Nigeria
+    </p>
 
   </div>
 
 </section>
-
-
-<!-- ===========================
-FINAL CTA
-=========================== -->
-
-<section class="final-order-cta">
-
-  <h2>
-    Your New Length Is Only 3 Minutes Away.
-  </h2>
-
-  <p>
-    No salon appointment. No complicated installation.
-    No need to start your hairstyle all over again.
-  </p>
-
-  <p>
-    Just attach your GlamCurl, adjust it,
-    and step out looking like you planned it all week.
-  </p>
-
-  <a
-    href="https://wa.me/2349137455978?text=Hi%20GlamCurl,%20I%20am%20ready%20to%20order."
-    class="final-order-button"
-  >
-    Order My GlamCurl →
-  </a>
-
-  <small>
-    Short • Mid • Long &nbsp;|&nbsp; Delivery available across Nigeria
-  </small>
-
-</section>
-
-
 
 <script>
 const hero = document.getElementById("hero");
